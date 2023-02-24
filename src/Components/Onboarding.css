@@ -132,7 +132,7 @@
     }
     
     .caro {
-        @apply w-[25rem]
+        @apply w-[15rem]
     }
     
     .header {
