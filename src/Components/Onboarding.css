@@ -105,3 +105,110 @@
 .choose {
     @apply flex flex-col gap-[2rem]
 }
+
+/* styles for screens wider than 1024px (laptops) */
+@media (min-width: 1024px) {
+
+    .onboard {
+        @apply h-[100vh] w-[100vw] flex flex-row
+    }
+    
+    .first {
+        background: linear-gradient(0deg, rgba(81, 179, 105, 0.9),
+                rgba(70, 192, 106, 0.9)), url(../assets/ayo.jpg);
+        @apply w-[46.25%] bg-center bg-cover bg-no-repeat pl-[5.86rem] pt-[4.57rem] pr-[7.93rem]
+    }
+    
+    .log {
+        @apply w-[7.11rem] h-[7.11rem]
+    }
+    
+    .logo {
+        @apply flex items-center flex-row mb-[7.71rem]
+    }
+    
+    .text {
+        @apply text-[white] text-[1.14rem] font-semibold leading-[1.36rem]
+    }
+    
+    .caro {
+        @apply w-[25rem]
+    }
+    
+    .header {
+        @apply text-[2rem] font-bold text-white leading-[1rem] mt-[3rem]
+    }
+    
+    
+    .body-text {
+        @apply w-[20rem] h-[15rem]
+    }
+    
+    .ayo {
+        @apply h-[32rem] w-[50rem]
+    }
+    
+    .second {
+        @apply w-[53.75%] h-[13.57rem] mt-[5rem]
+    }
+    
+    .second-top {
+        @apply mb-[9.64rem] text-[#8692A6] text-[1.28rem] leading-[2rem] font-normal flex justify-end mr-[5.79rem]
+    }
+    
+    .sign {
+        @apply text-[#5dbb5d] ml-[0.5rem]
+    }
+    
+    .center-choose {
+        @apply flex flex-col ml-[9.1rem]
+    }
+    
+    .choose-head {
+        @apply font-bold leading-[2.57rem] text-[2.14rem] text-[black] mb-[0.71rem]
+    }
+    
+    .choose-text {
+        @apply w-[29.36rem] font-normal leading-[2rem] text-[1.28rem] mb-[2.5rem]
+    }
+    
+    .choose-options {
+        background: #F5F9FF;
+        border: 0.07rem solid #ffffff;
+        box-shadow: 0rem 1.09rem 1rem 0.09rem rgba(0, 0, 0, 0.04);
+        border-radius: 0.43rem;
+        @apply w-[30.43rem] h-[7.71rem] flex flex-row gap-[2rem] pt-[1.86rem] pl-[2.07rem] mb-[1.78rem]
+    }
+    
+    .choose-options:hover {
+        background: #F5F9FF;
+        border: 0.07rem solid #15d835;
+        box-shadow: 0rem 0.29rem 1rem 0.07rem rgba(0, 0, 0, 0.04);
+        border-radius: 0.43rem;
+    }
+    
+    /* .choose-option{
+        @apply flex 
+    } */
+    
+    .icons {
+        @apply w-[3.71rem] h-[3.71rem]
+    }
+    
+    .rider {
+        @apply flex flex-col gap-[0.28rem]
+    }
+    
+    .option-head {
+        @apply font-medium leading-[1.36rem] text-[1.14rem] text-[black]
+    }
+    
+    .option-text {
+        @apply leading-[1.21rem] text-[1rem] font-normal text-[#8692A6] flex flex-row gap-[0.27rem]
+    }
+    
+    .choose {
+        @apply flex flex-col gap-[2rem]
+    }
+    
+}
