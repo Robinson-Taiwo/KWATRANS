@@ -2,12 +2,10 @@
     padding: 0rem;
     margin: 0rem;
     box-sizing: border-box;
-    overflow: hidden;
-    scroll-behavior: smooth;
 }
 
 .onboard {
-    @apply h-[100vh] w-[100vw] flex flex-row
+    @apply h-[100vh] w-[100vw] flex flex-row overflow-hidden
 }
 
 .first {
