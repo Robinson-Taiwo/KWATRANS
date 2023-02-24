@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from "../assets/logo.svg"
 import icon2 from "../assets/icon2.svg"
 import ic from "../assets/ic.svg"
@@ -12,9 +12,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Registration.css"
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 
-
+import "./UnitReg.css"
 
 
 const responsive = {
@@ -38,50 +37,40 @@ const responsive = {
 };
 
 
+const UnitReg = () => {
 
 
-const Registration = () => {
-
-
-    const [name, setName] = useState("")
-    const [number, setNumber] = useState("")
-    const [idNumber, setIdNumber] = useState("")
-    const [chasesNumber, setChasesNumber] = useState("")
-
+    const [address, setAddress] = useState("")
+    const [unitName, setUnitName] = useState("")
+    const [unitNumber, setUnitNumber] = useState("")
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(`Name: ${name}`);
-        console.log(`Number: ${number}`);
-        console.log(`idNumber: ${idNumber}`);
-        console.log(`chasesNumber: ${chasesNumber}`);
-        setName("")
-        setNumber("")
-        setIdNumber("")
-        setChasesNumber("")
+        console.log(`Address: ${address}`);
+        console.log(`UnitName: ${unitName}`);
+        console.log(`UnitNumber: ${unitNumber}`);
+        setUnitName("")
+        setAddress("")
+        setUnitNumber("")
 
         // Here you can store the data in a state management library like Redux, or send it to an API endpoint
     };
 
-    const handleName = (e) => {
+    const handleAddress = (e) => {
         e.preventDefault();
-        setName(e.target.value)
+        setAddress(e.target.value)
     }
 
-    const handleNumber = (e) => {
+    const handleUnitName = (e) => {
         e.preventDefault();
-        setNumber(e.target.value)
+        setUnitName(e.target.value)
     }
 
-    const handleId = (e) => {
+    const handleUnitNumber = (e) => {
         e.preventDefault();
-        setIdNumber(e.target.value)
+        setUnitNumber(e.target.value)
     }
 
-    const handleChases = (e) => {
-        e.preventDefault();
-        setChasesNumber(e.target.value)
-    }
 
     return (
         <div className='onboard' >
@@ -117,7 +106,7 @@ const Registration = () => {
 
 
                 <h1 className="header">
-                    KWARA STATE TRANSPORT MANAGEMENT SYSTEM
+                    REGISTER YOUR UNIT
                 </h1>
 
 
@@ -130,8 +119,8 @@ const Registration = () => {
 
                 <div className="reg-form">
                     <div className="reg-heading
-                    ">
-                        Register Your Ride
+                ">
+                        Register Your Unit
 
                     </div>
 
@@ -145,28 +134,23 @@ const Registration = () => {
 
                     <form onSubmit={handleSubmit} className="forml">
                         <div className="each">
-                            <span className='label'> Owner's Name*</span>
-                            <input value={name} onChange={handleName} placeholder='E.g Jane Doe' type="text" name='owner' id='owner' className='owner' />
+                            <span className='label'> Address*</span>
+                            <input onChange={handleAddress} placeholder='E.g Asa-dam, Ilorin' type="text" name='owner' id='owner' className='owner' />
                         </div>
 
                         <div className="each">
-                            <span className='label'> phone number*</span>
-                            <input value={number} onChange={handleNumber} type="tel" name='phone' id='phone' pattern="\+234[0-9]{10}" placeholder="+234XXXXXXXXXX" required className='owner' />
+                            <span className='label'> Unit Name*</span>
+                            <input onChange={handleUnitName} type="text" name='phone' id='phone' placeholder="E.g Taiwo unit" required className='owner' />
                         </div>
 
 
                         <div className="each">
-                            <span className='label'>identity number*</span>
-                            <input value={idNumber} onChange={handleId} type="text" placeholder='E.g Jane Doe' name='identity' id='identity' className='owner' />
-                        </div>
-
-                        <div className="each">
-                            <span className='label'> Chases number*</span>
-                            <input value={chasesNumber} onChange={handleChases} type="num" placeholder='E.g 255637PO' name='chases' id='chases' className='owner' />
+                            <span className='label'>Unit Number*</span>
+                            <input onChange={handleUnitNumber} type="text" placeholder='E.g 112' name='identity' id='identity' className='owner' />
                         </div>
 
 
-                        <button className="verify">
+                        <button type='submit' className="verify1">
                             Register Data
                         </button>
 
@@ -183,4 +167,4 @@ const Registration = () => {
     )
 }
 
-export default Registration
+export default UnitReg

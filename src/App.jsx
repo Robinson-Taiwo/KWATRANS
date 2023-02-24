@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import Onboarding from './Components/Onboarding'
 import './App.css'
+import AppRoutes from './Components/AppRoutes'
 
 function App() {
 
   return (
     <div className="App">
-      <Onboarding/>
+      <AppRoutes />
     </div>
   )
 }

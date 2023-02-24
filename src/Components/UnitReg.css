@@ -31,7 +31,7 @@
 }
 
 .header {
-    @apply text-[2rem] font-bold text-white leading-[1rem] mt-[3rem]
+    @apply text-[1.9rem] font-bold text-white leading-[1rem] mt-[3rem]
 }
 
 
@@ -47,12 +47,66 @@
     @apply w-[53.75%] h-[13.57rem] mt-[5rem]
 }
 
-.second-top {
-    @apply mb-[9.64rem] text-[#8692A6] text-[1.28rem] leading-[2rem] font-normal flex justify-end mr-[5.79rem]
+.form-top {
+    @apply mb-[5.64rem] text-[#8692A6] text-[1.2rem] leading-[1.35rem] font-normal flex justify-start ml-[3.78rem]
+}
+
+.hline {
+    border: 0.07rem solid #F5F5F5;
+    @apply w-[30.5rem] mt-[1.14rem]
+}
+
+.reg-form {
+    @apply ml-[14.07rem] flex flex-col
+}
+
+.owner {
+    background: #FFFFFF;
+    border: 0.07rem solid #15d83f;
+    box-shadow: 0rem 0.29rem 0.71rem 0.21rem rgba(0, 0, 0, 0.11);
+    border-radius: 0.43rem;
+    @apply pl-[2rem]
+}
+
+.label {
+    @apply text-[1.14rem] font-medium leading-[1.36rem] text-[#696F79]
+}
+
+.owner:focus {
+    outline: none;
+}
+
+
+
+.verify {
+    border-radius: 0.43rem;
+    @apply bg-[#32cc6d] text-[white] w-[30.43rem] h-[4.57rem] flex justify-center items-center
+}
+
+
+.forml {
+    @apply gap-y-[1.71rem] flex flex-col mt-[1.14rem]
+}
+
+.reg-heading {
+    @apply font-bold leading-[2.57rem] text-[2.143rem]
+}
+
+.reg-desc {
+    @apply w-[29.35rem] font-normal text-[1.29rem] leading-[2rem] text-[#8692A6]
 }
 
 .sign {
     @apply text-[#5dbb5d] ml-[0.5rem]
+}
+
+.each {
+    @apply flex flex-col gap-[1rem]
+}
+
+.owner {
+    border: 0.07rem solid #8692A6;
+    @apply w-[30.43rem] h-[4.57rem]
 }
 
 .center-choose {
