@@ -8,7 +8,6 @@ import loc from "../assets/loc.svg"
 import ima from "../assets/ima.jpg"
 import ola from "../assets/ola.jpg"
 import josh from "../assets/josh.jpg"
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Onboarding.css"
@@ -21,7 +20,7 @@ const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5
+        items: 1
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -40,14 +39,14 @@ const responsive = {
 
 const Onboarding = () => {
     return (
-        <div className='onboard' >
+        <div className='onboard4' >
             {/* blue background */}
             <div className="first">
 
                 <div className="logo">
                     <img className='log' src={logo} alt="" />
 
-                    <div className="text">
+                    <div className="text1">
                         KWTMS
                     </div>
 
@@ -55,25 +54,25 @@ const Onboarding = () => {
 
                 {/* center div */}
 
-                <Carousel className='caro' showDots={true} autoPlay={true} infinite={true} responsive={responsive} >
-                    <div>
-                        <img className='ayo' src={ayo} alt="" />
+                <Carousel className='caro1' showDots={true} autoPlay={true} infinite={true} responsive={responsive} >
+                    <div className='aya'>
+                        <img className='ayo1' src={ayo} alt="" />
                     </div>
                     <div>
-                        <img className='ayo' src={ola} alt="" />
+                        <img className='ayo1' src={ola} alt="" />
                     </div>
                     <div>
-                        <img className='ayo' src={josh} alt="" />
+                        <img className='ayo1' src={josh} alt="" />
                     </div>
                     <div>
-                        <img className='ayo' src={ima} alt="" />
+                        <img className='ayo1' src={ima} alt="" />
                     </div>
 
                 </Carousel>
 
 
-                <h1 className="header">
-                    KWARA STATE TRANSPORT MAAGEMENT SYSTEM
+                <h1 className="header1">
+                    KWARA STATE TRANSPORT MANAGEMENT SYSTEM
                 </h1>
 
 
@@ -84,29 +83,30 @@ const Onboarding = () => {
                     Already have an account?  <span className="sign"> Sign In</span>
                 </div>
 
-                <div className="center-choose">
-                    <div className="choose-head">
+                <div className="center-choose1">
+                    <div className="choose-head1">
                         Welcome!!
                     </div>
 
-                    <div className="choose-text">
+                    <div className="choose-text1">
                         To begin your registration, tell us what you are registering
                     </div>
 
 
 
-                    <Link to="Registration" className="choose-options">
+
+                    <Link to="Registration" className="choose-options1">
 
                         <div className="icon">
                             <img src={loc} className="loc" alt="" />
                         </div>
 
-                        <div className="rider">
-                            <h1 className="option-head">
+                        <div className="rider1">
+                            <h1 className=" option-head1">
                                 Ride and Rider
                             </h1>
 
-                            <p className="option-text">
+                            <p className="option-text1">
                                 Register yourself and your ride at a goal
 
                                 <img src={ic} alt="" className="ic" />
@@ -115,18 +115,18 @@ const Onboarding = () => {
 
                     </Link>
 
-                    <Link to="UnitReg" className="div choose-options">
+                    <Link to="UnitReg" className="div choose-options1">
 
-                        <div className="icon">
+                        <div className="icon1">
                             <img src={acc} className="loc" alt="" />
                         </div>
 
-                        <div className="rider">
+                        <div className="rider1">
                             <h1 className="option-head">
                                 Your Unit
                             </h1>
 
-                            <p className="option-text">
+                            <p className="option-text1">
                                 Register your transport unit
                             </p>
                         </div>

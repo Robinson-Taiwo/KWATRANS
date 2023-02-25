@@ -26,21 +26,20 @@
     @apply text-[white] text-[1.14rem] font-semibold leading-[1.36rem]
 }
 
-.caro {
-    @apply w-[50rem]
+.caro3 {
+    @apply w-[100%]
 }
 
-.header {
-    @apply text-[1.9rem] font-bold text-white leading-[1rem] mt-[3rem]
+.header3 {
+    @apply flex flex-wrap text-[1.8rem] font-bold text-[white] leading-[2rem] mt-[3rem]
 }
-
 
 .body-text {
     @apply w-[20rem] h-[15rem]
 }
 
-.ayo {
-    @apply h-[32rem] w-[50rem]
+.ayo3 {
+    @apply h-[32rem] w-[100%] flex flex-wrap
 }
 
 .second {
@@ -78,11 +77,15 @@
 
 
 
-.verify {
+.verify2 {
     border-radius: 0.43rem;
     @apply bg-[#32cc6d] text-[white] w-[30.43rem] h-[4.57rem] flex justify-center items-center
 }
 
+.verify2:hover {
+    box-shadow: 0rem 0.29rem 0.71rem 0.21rem rgba(0, 0, 0, 0.11);
+    @apply bg-[#0b6b0b]
+}
 
 .forml {
     @apply gap-y-[1.71rem] flex flex-col mt-[1.14rem]
